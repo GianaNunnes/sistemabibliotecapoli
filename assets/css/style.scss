@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "poli";
+    src: url(../fonts/Jura-VariableFont_wght.ttf);
+}
+
+body {
+    font-family: "poli" !important;
+    // font-size: 2em !important;
+}
+
+$vermelho: #ea3124;
+.texto-vermelho {
+    color: $vermelho;
+}
+
+.card-img-top {
+    height: 300px;
+    object-fit: contain;
+}
+
+.btn.btn-poli {
+    background-color: $vermelho;
+    color: white ;
+    border-radius: 10px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    transition: 0.1s;
+    font-size: 1.4em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    line-height: 1em;
+    &:hover {
+        transform: scale(1.1);
+        color: white !important;
+    }
+}
+
+#detalhesLivro, #detalhesAlunos{
+    h5{
+        color: $vermelho;
+        margin-bottom: 3px;
+    }
+    p{
+        margin-bottom: 0;
+    }
+    .border{
+        height: 100%;
+        padding: 5px;     
+        border-radius: 5px;   
+    }
+}
